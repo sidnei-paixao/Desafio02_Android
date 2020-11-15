@@ -24,7 +24,10 @@ class MainActivity : AppCompatActivity()
     if(findViewById<EditText>(R.id.txtEmail).text.toString().length==0 || findViewById<EditText>(R.id.txtSenha).text.toString().length==0)
       Toast.makeText(this, "Não é possível efetuar login: preencha corretamente os campos email e senha para continuar", Toast.LENGTH_LONG).show()
     else
+    {
       startActivity(Intent(this, ListaItens::class.java))
+      finish()
+    }
   }
 
   private fun fnNovoUsuario()

@@ -14,12 +14,14 @@ class Restaurantes(val oRestaurante:List<InfoRestaurante>):RecyclerView.Adapter<
         private val oImagem by lazy { oContexto.findViewById(R.id.imgFoto) as ImageView }
         private val oNome by lazy { oContexto.findViewById(R.id.txtNome) as TextView }
         private val oEndereco by lazy { oContexto.findViewById(R.id.txtEndereco) as TextView }
+        private val oHorario by lazy { oContexto.findViewById(R.id.txtHorario) as TextView }
 
         fun fnCarregar(oItem: InfoRestaurante)
         {
             oImagem.setImageResource(oItem.nImagem ?: 0)
             oNome.text = oItem.cNome
             oEndereco.text = oItem.cEndereco
+            oHorario.text = oItem.cHorario
         }
     }
 

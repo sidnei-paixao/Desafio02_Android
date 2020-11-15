@@ -16,11 +16,11 @@ class ListaItens : AppCompatActivity()
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(this@ListaItens)
             adapter = Restaurantes(arrayListOf(
-                InfoRestaurante(R.drawable.rest01, "Restaurante do Zé", "Endereço do local"),
-                InfoRestaurante(R.drawable.rest02, "Restaurante do Zé", "Endereço do local"),
-                InfoRestaurante(R.drawable.rest03, "Restaurante do Zé", "Endereço do local"),
-                InfoRestaurante(R.drawable.rest04, "Restaurante do Zé", "Endereço do local"),
-                InfoRestaurante(R.drawable.rest05, "Restaurante do Zé", "Endereço do local")
+                InfoRestaurante(R.drawable.rest01, "Restaurante do Zé", "Rua Augusta, 69"),
+                InfoRestaurante(R.drawable.rest02, "MérDônis", "Em todos os shoppings da cidade"),
+                InfoRestaurante(R.drawable.rest03, "Rotisseria Pinto Feliz", "Avenida Braz Leme, 500"),
+                InfoRestaurante(R.drawable.rest04, "Restaurante ChingLing", "Avenida Liberdade, 333"),
+                InfoRestaurante(R.drawable.rest05, "Pizzaria Carcamano", "Avenida Lins de Vasconcelos, 13")
             ))
         }
     }
